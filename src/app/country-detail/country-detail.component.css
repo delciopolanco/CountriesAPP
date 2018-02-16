@@ -1,0 +1,14 @@
+.countryDetail .img img{
+  max-width: 350px;
+  width: 100%;
+  vertical-align: middle;
+ }
+
+ /* .loader  {
+   background: #efebeb;
+
+ } */
+
+ form {
+   margin: 10px 0;
+ }

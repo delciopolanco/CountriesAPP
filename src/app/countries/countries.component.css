@@ -1,0 +1,22 @@
+.country label,
+select {
+  padding: 10px;
+}
+
+.country label {
+  width:18%;
+  display:inline-block;
+}
+
+.country select {
+  width:80%;
+  display:inline-block;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px ;
+}
+
+ .country .form-group {
+  margin-bottom: 0;
+}

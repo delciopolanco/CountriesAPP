@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 40px 20px;
+  background: url(assets/bg.jpg) repeat;
+}
+
+.widget  {
+  background: #fff;
+  padding: 10px 5px;
+  margin: 20px 10px;
+}
