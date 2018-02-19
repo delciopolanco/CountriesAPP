@@ -1,14 +1,45 @@
-.countryDetail .img img{
-  max-width: 350px;
-  width: 100%;
-  vertical-align: middle;
- }
+.countryDetail {
+    position: relative;
+}
 
- /* .loader  {
-   background: #efebeb;
+.countryDetail .img img {
+    max-width: 350px;
+    vertical-align: middle;
+}
 
- } */
+.countryDetail .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #e9ecef;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
 
- form {
-   margin: 10px 0;
- }
+.countryDetail .loading {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -28px 0 0 -25px;
+}
+
+.countryDetail .noData {
+    border: 1px dashed #ccc;
+    max-height: 200px;
+}
+
+.countryDetail span {
+    border: 0 !important;
+    margin: 25% auto;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+form {
+    margin: 10px 0;
+}
