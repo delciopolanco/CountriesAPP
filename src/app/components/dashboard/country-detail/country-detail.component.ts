@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Country } from '@entities/country';
-import { deserialize } from '@entities/map-utils';
 import { GlobalEventManagerService } from '@services/global-event-manager.service';
 import { CountriesService } from '@services/countries.service';
 
@@ -28,15 +27,16 @@ export class CountryDetailComponent {
     }
 
     this.loader = true;
-    this.contriesService.getCountries(country).then(json => {
-      if (json) {
-        this.countryModel = deserialize(Country, json);
+    this.contriesService.getCountries(country).subscribe(
+      products => {
+        if (products) {
+          this.countryModel = products;
+          this.loader = false;
+        }
+        console.log(products);
+      }, error => {
         this.loader = false;
-      }
-    }).catch(error => {
-      this.loader = false;
-      console.log(error);
-    });
-
+        console.error(error);
+      });
   }
 }

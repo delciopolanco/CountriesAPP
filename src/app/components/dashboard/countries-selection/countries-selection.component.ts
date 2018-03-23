@@ -57,13 +57,6 @@ export class CountriesSelectionComponent {
       population: 0,
       flag: '',
       region: ''
-    }, {
-      name: 'Rep Dominicana',
-      code: 'DOM',
-      capital: '',
-      population: 0,
-      flag: '',
-      region: ''
     }
   ];
   selectedCountry: string = '';
