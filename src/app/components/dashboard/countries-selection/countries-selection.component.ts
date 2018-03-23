@@ -1,6 +1,6 @@
-import { Country } from './../entities/country';
+import { Country } from '../../../entities/country';
 import { Component } from '@angular/core';
-import { GlobalEventManagerService } from '../services/global-event-manager.service';
+import { GlobalEventManagerService } from '../../../services/global-event-manager.service';
 import { FormsModule } from '@angular/forms';
 import { Router, NavigationEnd } from '@angular/router';
 import 'rxjs/add/operator/filter';
@@ -15,7 +15,7 @@ export class CountriesSelectionComponent {
   countryList: Country[] = [
     {
       name: 'Seleccione',
-      code: '0',
+      code: '',
       capital: '',
       population: 0,
       flag: '',
@@ -65,21 +65,20 @@ export class CountriesSelectionComponent {
       flag: '',
       region: ''
     }
-  ]
-  selectedCountry: Country;
+  ];
+  selectedCountry: string = '';
 
   constructor(
     private globalEventManager: GlobalEventManagerService,
     private router: Router) {
     this.router.events.filter((event) => event instanceof NavigationEnd).subscribe((event) => {
-      // if (this.companyOptions != 'Seleccione') {
-      //   this.companyOptions = 'Seleccione';
-      // }
+      this.selectedCountry = '';
+      this.globalEventManager.changeCountries(this.selectedCountry);
     });
   }
 
+
   change(event) {
-    console.log('Se selecciona el pais: ' + this.selectedCountry.code);
-    this.globalEventManager.changeCountries(this.selectedCountry.code);
+    this.globalEventManager.changeCountries(this.selectedCountry);
   }
 }

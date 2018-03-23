@@ -2,7 +2,7 @@
   <div class="form-group col-md-12 selection">
     <label for="exampleInputEmail1">Seleccione la el pais</label>
     <select [(ngModel)]="selectedCountry" (change)="change($event)" name="company">
-      <option [ngValue]="country" *ngFor="let country of countryList" [attr.selected]="country.code == 0">
+      <option [ngValue]="country.code" *ngFor="let country of countryList">
         {{country.name}}
       </option>
     </select>

@@ -1,4 +1,4 @@
-import { JsonProperty } from "./map-utils";
+import { JsonProperty } from './map-utils';
 
 export class Country {
   @JsonProperty('name')

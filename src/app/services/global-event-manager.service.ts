@@ -10,7 +10,6 @@ export class GlobalEventManagerService {
   public countryEmitter: Observable<string> = this.countries.asObservable();
 
   changeCountries(country: string) {
-    console.log('Servicio  recibe el pais: ' + country);
     this.countries.next(country);
   }
 

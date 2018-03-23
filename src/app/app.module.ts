@@ -6,10 +6,12 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 /* Components */
 import { AppComponent } from './app.component';
-import { CountriesSelectionComponent } from './countries-selection/countries-selection.component';
-import { CountryDetailComponent } from './country-detail/country-detail.component';
-import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { CountriesSelectionComponent } from './components/dashboard/countries-selection/countries-selection.component';
+import { CountryDetailComponent } from './components/dashboard/country-detail/country-detail.component';
+
+import { HomeComponent } from './components/home/home.component';
 /* Services */
 import { GlobalEventManagerService } from './services/global-event-manager.service';
 import { InvocationService } from './services/invocation.service';
