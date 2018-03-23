@@ -1,8 +1,8 @@
-import { Country } from '../../../entities/country';
 import { Component, OnInit } from '@angular/core';
-import { GlobalEventManagerService } from '../../../services/global-event-manager.service';
-import { CountriesService } from '../../../services/countries.service';
-import { deserialize } from '../../../entities/map-utils';
+import { Country } from '@entities/country';
+import { deserialize } from '@entities/map-utils';
+import { GlobalEventManagerService } from '@services/global-event-manager.service';
+import { CountriesService } from '@services/countries.service';
 
 
 @Component({

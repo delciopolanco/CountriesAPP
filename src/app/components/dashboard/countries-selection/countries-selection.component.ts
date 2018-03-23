@@ -1,8 +1,8 @@
-import { Country } from '../../../entities/country';
 import { Component } from '@angular/core';
-import { GlobalEventManagerService } from '../../../services/global-event-manager.service';
 import { FormsModule } from '@angular/forms';
 import { Router, NavigationEnd } from '@angular/router';
+import { GlobalEventManagerService } from '@services/global-event-manager.service';
+import { Country } from '@entities/country';
 import 'rxjs/add/operator/filter';
 
 @Component({

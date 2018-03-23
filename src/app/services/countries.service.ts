@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { environment } from '../../environments/environment';
-import { Country } from '../entities/country';
-import { InvocationService } from '../services/invocation.service';
+import { environment } from '@env/environment';
+import { Country } from '@entities/country';
+import { InvocationService } from '@services/invocation.service';
 
 @Injectable()
 export class CountriesService {
