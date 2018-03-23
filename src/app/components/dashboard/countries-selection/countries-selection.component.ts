@@ -12,6 +12,7 @@ import 'rxjs/add/operator/filter';
 })
 
 export class CountriesSelectionComponent {
+  loader: Boolean = true;
   countryList: Country[] = [
     {
       name: 'Seleccione',

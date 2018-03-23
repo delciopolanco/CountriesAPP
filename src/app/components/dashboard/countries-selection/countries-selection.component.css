@@ -20,3 +20,12 @@ select {
  .country .form-group {
   margin-bottom: 0;
 }
+
+.country .loader {
+  width: 1%;
+  display: inline-block;
+}
+.country .loading {
+  width: 20px;
+  height: 20px;
+}
